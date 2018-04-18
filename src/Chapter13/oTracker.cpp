@@ -29,7 +29,7 @@ int main()
 {
 	// Create video procesor instance
 	VideoProcessor processor;
-	
+
 	// generate the filename
 	std::vector<std::string> imgs;
 	std::string prefix = "goose/goose";
@@ -47,7 +47,7 @@ int main()
 	}
 
 	// Create feature tracker instance
-	cv::Ptr<cv::TrackerMedianFlow> ptr= cv::TrackerMedianFlow::createTracker();
+	cv::Ptr<cv::TrackerMedianFlow> ptr= cv::TrackerMedianFlow::create();
 	VisualTracker tracker(ptr);
 	// VisualTracker tracker(cv::TrackerKCF::createTracker());
 

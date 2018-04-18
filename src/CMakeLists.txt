@@ -15,7 +15,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 # add opencv package to the project
 find_package( OpenCV REQUIRED )
-INCLUDE_DIRECTORIES( ${OpenCV_INCLUDE_DIRS} ) 
+INCLUDE_DIRECTORIES( ${OpenCV_INCLUDE_DIRS} )
 SET(OpenCV_LIBRARIES ${OpenCV_LIBS})
 
 message(STATUS "OpenCV library status:")
@@ -38,6 +38,5 @@ add_subdirectory(Chapter11)
 add_subdirectory(Chapter12)
 add_subdirectory(Chapter13)
 add_subdirectory(Chapter14)
-
-
-
+add_subdirectory(Car_Detector)
+add_subdirectory(carContourDetector)
